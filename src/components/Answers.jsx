@@ -17,7 +17,7 @@ function Answers({ answers, selectedAnswers, answerState, onSelect }) {
                 }
 
                 if (answerState === 'correct' || answerState === 'wrong' && isSelected) {
-                    cssClass = answerState
+                    cssClass += answerState
                 }
                 return <li key={index} className='answer'>
                     <button
